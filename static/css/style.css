@@ -1,0 +1,73 @@
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(5deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
+    /* Vertical center */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.form {
+    width: 50%;
+    max-width: 350px;
+    padding: 0% 25% 0% 35%;
+}
+
+.form-title { 
+    font-size: 42px; 
+    font-family: 'Avenir'; 
+    font-weight: 800; 
+    letter-spacing: 0.5px; 
+    color: #e8e8e8; 
+    padding-bottom: 12px; 
+}
+
+.form-subtitle {
+    font-size: 18px;
+    font-family: 'Avenir';
+    letter-spacing: 0.5px;
+    color: #fff9f9;
+    padding-bottom: 24px;
+}
+
+.u-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 12px;
+}
+.input {
+    background-color: #3e404b;
+    color: white;
+    font-family: "Avenir";
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 24px 18px 12px 18px;
+    width: calc(100% - 18px - 18px);
+    margin-bottom: 12px;
+}
+.button {
+    width: 100%;
+    height: 53px;
+    color: white;
+    background-color: #525b5d;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-family: "Avenir";
+    cursor: pointer;
+    transition: all .44s ease;
+    -webkit-transition: all .44s ease;
+    -moz-transition: all .44s ease;
+}
+.button:hover { filter: brightness(145%); }

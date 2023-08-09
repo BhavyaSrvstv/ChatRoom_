@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatRoom</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style2.css')}}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" 
+    integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+     crossorigin="anonymous"></script>
+     <script type="module" src="/static/js/widget.js"></script>
+     <script type="module" src="/static/js/main.js"></script>
+</head>
+<body>
+    <h3>ChatRoom {{room}}</h3>
+    <div id="container">
+        {% for message in messages %}
+        <div class="message"><b>{{message.sender}}:&nbsp;</b> {{message.text}}</div>
+        <!-- <div class="message right"></div>
+        <div class="message left"></div>
+        <div class="announce"></div> -->
+        {% endfor%}
+    </div>
+    <div class="send">
+        <form id="send-container">
+            <input type="text" name="inputbox" id="inputbox" placeholder="Enter your message here">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

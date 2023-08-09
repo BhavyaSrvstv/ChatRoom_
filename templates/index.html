@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatRoom</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" 
+    integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+ <div class="content">
+    <div class="form">
+        <div class="form-title">
+            Welcome 
+        </div>
+
+        <div class="form-subtitle">
+            Select your username to get started
+        </div>
+
+        <div class="u-input">
+            <form action="/room">
+            <input class="input"name="username" id="username" placeholder="Username" />
+            <input class="input" name="roomid" id="roomid" placeholder="Room Id" />
+            <button class="button" type="submit" id="join">Join</button>
+        </form>
+        </div>
+    </div>
+</div>
+</body>
